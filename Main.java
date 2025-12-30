@@ -1,33 +1,30 @@
 import java.util.ArrayList;
+import java.util.NoSuchElementException;
 import java.util.Scanner;
+import java.util.InputMismatchException;
 
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        ArrayList<String> numbers = new ArrayList<>();
+        int n = 0;
+        try {
+            System.out.print("Enter # of numbers: ");
+            n = scanner.nextInt();
 
-        boolean email_list = true;
-
-        ArrayList<String> emails = new ArrayList<>();
-
-        do {
-            System.out.print("Enter email or press 'q' to exit.\n: ");
-            String email = scanner.nextLine();
-            email = email.toLowerCase();
-
-            if (email.equalsIgnoreCase("q")) {
-                email_list = false;
-            }else if (!email.endsWith("@gmail.com")) {
-                System.out.println("Invalid email address, try again.");
-            }else if (emails.contains(email)) {
-                    System.out.println("Email already added.");
-            }else {
-                emails.add(email);
+            for (int i = 1; i <= n; i++) {
+                System.out.printf("Enter Number#%s: ", i);
+                numbers.add(scanner.next());
             }
+            System.out.println("Your list: " + numbers);
 
-        }while (email_list);
+        } catch (InputMismatchException e) {
+            System.err.println("Please enter an integer");
 
-        System.out.println(emails);
-
-        scanner.close();
+        } catch (Exception e) {
+            System.err.println("Something went wrong");
+        } finally {
+            scanner.close();
+        }
     }
 }
