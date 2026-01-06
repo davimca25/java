@@ -20,3 +20,6 @@ The goal of this repository is to practice and consolidate core Java fundamental
 - Git & GitHub
 
 
+**I'm learning how to use GitHub btw**
+
+
