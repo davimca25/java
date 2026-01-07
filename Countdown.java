@@ -26,7 +26,7 @@ public class Countdown {
                 }
             }
         };
-
+        // do instantly every 1 second
         timer.schedule(task, 0,1000);
     }
 }
