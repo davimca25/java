@@ -1,22 +1,20 @@
 public class Main {
     public static void main(String[] args) {
 
-        Task task1 = new Task(1,"Estudar Java");
-        Task task2 = new Task(2,"Estudar Linux");
-        Task task3 = new Task(3,"Estudar Git");
-        TaskManager manager = new TaskManager();
+        TaskManager manager1 = new TaskManager();
 
-        //System.out.printf("Status: %b",task1.taskStatus());
+        manager1.addTask("Estudar java");
+        manager1.addTask("Estudar git");
+        manager1.addTask("Estudar linux");
+        manager1.addTask("Estudar Cloud");
 
-        manager.addTask(task1);
-        manager.addTask(task2);
-        manager.addTask(task3);
+        manager1.removeTask("Estudar Cloud");
 
-        task1.markAsCompleted();
-        task2.markAsCompleted();
+        manager1.removeTaskById(2);
 
-        manager.removeTask("Estudar Java");
-        manager.removeTask("Estudar Git");
-        manager.listTasks();
+        manager1.completeTaskById(3);
+
+        manager1.listTasks();
+
     }
 }

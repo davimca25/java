@@ -2,7 +2,6 @@ public class Task {
 
     private int id;
     private String title;
-
     private boolean completed = false;
 
     Task(int id, String title) {
@@ -13,12 +12,15 @@ public class Task {
         completed = true;
     }
     String displayInfo() {
-        return "Task: " + title + " | Completed: " + completed;
+        return "Task (ID " + id + ")" + " : " + title + " | Completed: " + completed;
     }
-    boolean taskStatus() {
+    boolean isCompleted() {
         return completed;
     }
     String getTitle() {
         return title;
+    }
+    int getId() {
+        return id;
     }
 }
