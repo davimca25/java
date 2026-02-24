@@ -1,0 +1,4 @@
+Java JDBC CRUD with PostgreSQL
+- PreparedStatement
+- Resource-safe (try-with-resources)
+- Basic CRUD operations

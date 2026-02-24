@@ -14,12 +14,26 @@ The goal of this repository is to practice and consolidate core Java fundamental
 - Basic Object-Oriented Programming (OOP)
 - Input validation and simple logic challenges
 
+## Projects
+
+### JDBC CRUD PostgreSQL
+
+CRUD built with pure Java using JDBC and PreparedStatement.
+
+### OOP Bank System
+
+A banking system simulation focused on encapsulation and inheritance.
+
+### Order Management OOP
+
+An order management system focused on composition and polymorphism.
+
+
 # Technologies
 - Java
 - IntelliJ IDEA
 - Git & GitHub
+- PostgreSQL
 
-
-**I'm learning how to use GitHub btw**
 
 
